@@ -69,7 +69,7 @@ export default function Navbar() {
           <div className="flex justify-between items-center">
             
             {/* LOGO */}
-            <Link href="/" className="flex-shrink-0 flex items-center gap-2 cursor-pointer group z-50">
+            <Link href="/" className="shrink-0 flex items-center gap-2 cursor-pointer group z-50">
               <div className="relative w-10 h-10 transition-transform duration-300 group-hover:scale-110">
                  <NextImage src="/shama-logo.svg" alt="Shama Logo" fill className="object-contain" />
               </div>
@@ -83,7 +83,7 @@ export default function Navbar() {
               {navLinks.map((item) => (
                 <Link key={item.path} href={item.path} className="group relative text-gray-300 font-medium text-sm uppercase tracking-wider hover:text-white transition-colors">
                   {item.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               ))}
             </div>
@@ -208,8 +208,8 @@ export default function Navbar() {
 
       {/* MODAL LOGIN */}
       {isLoginModalOpen && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm transition-all duration-300 animate-in fade-in">
-          <div className="bg-white rounded-[2rem] shadow-2xl w-full max-w-md overflow-hidden relative animate-in zoom-in-95 duration-200">
+        <div className="fixed inset-0 z-100 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm transition-all duration-300 animate-in fade-in">
+          <div className="bg-white rounded-4xl shadow-2xl w-full max-w-md overflow-hidden relative animate-in zoom-in-95 duration-200">
             <button 
               onClick={closeLoginModal} 
               className="absolute top-5 right-5 text-gray-400 hover:text-gray-600 bg-gray-50 hover:bg-gray-100 rounded-full p-2 transition z-10"
