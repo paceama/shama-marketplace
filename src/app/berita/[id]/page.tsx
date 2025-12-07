@@ -9,6 +9,12 @@ import { newsData } from '@/data/news';
 import { useLanguage } from '@/context/LanguageContext';
 import FadeIn from '@/components/FadeIn';
 
+export async function generateStaticParams() {
+  return newsData.map((news) => ({
+    id: news.id.toString(),
+  }));
+}
+
 export default function NewsDetail() {
   const params = useParams();
   const { language } = useLanguage();

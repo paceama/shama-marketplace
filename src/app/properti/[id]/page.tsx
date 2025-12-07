@@ -11,6 +11,12 @@ import { formatPrice } from '@/utils/currency';
 import FadeIn from '@/components/FadeIn';
 import { useAuth } from '@/context/AuthContext';
 
+export async function generateStaticParams() {
+  return properties.map((property) => ({
+    id: property.id.toString(),
+  }));
+}
+
 export default function PropertyDetail() {
   const params = useParams();
   const { language, t } = useLanguage();
