@@ -1,9 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export", // Wajib: Agar menghasilkan folder 'out' untuk Cloudflare
+  output: "export", // Pastikan baris ini ADA
   images: {
-    unoptimized: true, // Wajib: Agar gambar jalan di mode static
+    unoptimized: true, // Pastikan baris ini ADA
     remotePatterns: [
       {
         protocol: 'https',
