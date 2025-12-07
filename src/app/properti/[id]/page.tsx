@@ -193,8 +193,8 @@ export default function PropertyDetail() {
 
       {/* --- 3. MODAL BOOKING & VOUCHER --- */}
       {isBookingOpen && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm transition-all animate-in fade-in">
-           <div className="bg-white rounded-[2rem] shadow-2xl w-full max-w-lg relative overflow-hidden flex flex-col max-h-[90vh]">
+        <div className="fixed inset-0 z-100 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm transition-all animate-in fade-in">
+           <div className="bg-white rounded-4xl shadow-2xl w-full max-w-lg relative overflow-hidden flex flex-col max-h-[90vh]">
               
               {/* Header Modal */}
               <div className="bg-gray-50 px-8 py-5 border-b border-gray-100 flex justify-between items-center">

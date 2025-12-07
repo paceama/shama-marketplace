@@ -30,7 +30,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
   };
 
   return (
-    <div className="group bg-white rounded-2xl shadow-sm hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.1)] transition-all duration-300 border border-gray-100 overflow-hidden flex flex-col h-full hover:-translate-y-1">
+    <div className="group bg-white rounded-2xl shadow-sm hover:shadow-[0_20px_50px_rgba(8,112,184,0.1)] transition-all duration-300 border border-gray-100 overflow-hidden flex flex-col h-full hover:-translate-y-1">
       {/* Gambar Properti */}
       <div className="relative h-64 w-full overflow-hidden cursor-pointer" onClick={handleDetailClick}>
         <NextImage 
@@ -46,7 +46,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
       </div>
 
       {/* Konten Card */}
-      <div className="p-5 flex flex-col flex-grow">
+      <div className="p-5 flex flex-col grow">
         <div className="mb-4 cursor-pointer" onClick={handleDetailClick}>
           <p className="text-xs font-semibold text-indigo-600 uppercase tracking-wider mb-1">{property.location}</p>
           <h3 className="text-xl font-bold text-gray-900 line-clamp-1 group-hover:text-indigo-600 transition-colors">
